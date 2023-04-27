@@ -75,8 +75,8 @@ Where **Item** can be:
 ```
 | Parameter    | Type        | Description                                      |
 | :----------- | :---------- | :----------------------------------------------- |
-| `languageId` | `int/string`| **Required**. Name or Id of the desired language |
-| `categoryId` | `int/string`| *Optional*. Name or Id of the desired category   |
+| `languageId` | `int/string`| **Required**. Id or Name of the desired language |
+| `categoryId` | `int/string`| *Optional*. Id or Name of the desired category   |
 
 ### Create an item: 
 
