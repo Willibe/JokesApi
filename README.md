@@ -183,15 +183,15 @@ Where **Item** can be:
     "authorId"      :   string  (name or id)  (not nullable)
     "categoryId"    :   string  (name or id)  (not nullable)
     "languageId"    :   string  (name or id)  (not nullable)
-    "description"   :   string     	          (not nullable)
+    "description"   :   string                (not nullable)
 }
 ```
 
 #####  Update partially
 ```
 {    
-    "authorId"      :   string  (name or id)   (nullable)
-    "categoryId"    :   string  (name or id)   (nullable)
-    "languageId"    :   string  (name or id)   (nullable)
-    "description"   :   string                 (nullable)
+    "authorId"      :   string  (name or id)  (nullable)
+    "categoryId"    :   string  (name or id)  (nullable)
+    "languageId"    :   string  (name or id)  (nullable)
+    "description"   :   string                (nullable)
 }
