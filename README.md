@@ -39,7 +39,7 @@ dotnet run
 ***
 ### Get all:
 
-```http
+```
   GET /api/${item}
 ```
 Where **Item** can be:
@@ -50,11 +50,11 @@ Where **Item** can be:
 
 ### Get a single item:
 
-```http
+```
   GET /api/${item}/${id}
 ```
 #### Ex:
-```http
+```
   GET /api/authors/1
   GET /api/authors/Mike
 
@@ -66,11 +66,11 @@ Where **Item** can be:
 
 ### Get jokes by filter:
 
-```http
+```
   GET /api/jokes/filter/${languageId}/${categoryId}
 ```
 #### Ex:
-```http
+```
   GET /api/jokes/filter/english/christmas
 ```
 | Parameter    | Type        | Description                                      |
@@ -80,11 +80,11 @@ Where **Item** can be:
 
 ### Create an item: 
 
-```http
+```
   POST /api/${item}
 ```
 #### Ex:
-```http
+```
   POST /api/authors
 ```
 #### Body Ex:
@@ -103,11 +103,11 @@ Where **Item** can be:
 
 ### Delete an item:
 
-```http
+```
   DELETE /api/${item}/${id}
 ```
 #### Ex:
-```http
+```
   DELETE /api/authors/15
 ```
 | Parameter | Type     | Description                        |
@@ -118,11 +118,11 @@ Where **Item** can be:
 ### Update an item:
 
 
-```http
+```
   PUT /api/${item}/${id}
 ```
 #### Ex:
-```http
+```
   PUT /api/categories/12
 ```
 #### Body Ex:
@@ -143,11 +143,11 @@ Where **Item** can be:
 ### Update partially a joke:
 
 
-```http
+```
   PUT /api/jokes/${id}
 ```
 #### Ex:
-```http
+```
   PUT /api/jokes/14
 ```
 #### Body Ex:
