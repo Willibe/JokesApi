@@ -7,7 +7,9 @@ namespace JokesApi.DTOs.Category
     {
         [JsonIgnore]
         public int Id { get; set; }
-        public string Name { get; set; }
+
+        [Required(AllowEmptyStrings = false)]
+        public string Name { get; set; } = default!;
 
     }
 }

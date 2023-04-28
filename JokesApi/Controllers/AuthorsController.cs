@@ -23,7 +23,7 @@ namespace JokesApi.Controllers
             return Ok(authorList);
         }
 
-        [HttpGet("{nameOrID}")]
+        [HttpGet("{nameOrId}")]
         public async Task<IActionResult> GetByNameOrIdAsync(string nameOrId)
         {
             try

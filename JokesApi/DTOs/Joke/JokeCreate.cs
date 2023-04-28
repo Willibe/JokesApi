@@ -7,12 +7,22 @@ namespace JokesApi.DTOs.Joke
     {
         [JsonIgnore]
         public int Id { get; set; }
-        public string AuthorId { get; set; }
-        public string CategoryId { get; set; }
-        public string LanguageId { get; set; }
-        public string Description { get; set; }
+
+        [Required(AllowEmptyStrings = false)]
+        public string AuthorId { get; set; } = default!;
+
+        [Required(AllowEmptyStrings = false)]
+        public string CategoryId { get; set; } = default!;
+
+        [Required(AllowEmptyStrings = false)]
+        public string LanguageId { get; set; } = default!;
+
+        [Required(AllowEmptyStrings = false)]
+        public string Description { get; set; } = default!;
+
         [JsonIgnore]
         public DateTime DateAdded { get; set; }
+
         [JsonIgnore]
         public bool Deleted { get; set; }
     }

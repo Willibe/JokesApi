@@ -7,6 +7,8 @@ namespace JokesApi.DTOs.Language
     {
         [JsonIgnore]
         public int Id { get; set; }
-        public string Name { get; set; }
+
+        [Required(AllowEmptyStrings = false)]
+        public string Name { get; set; } = default!;
     }
 }

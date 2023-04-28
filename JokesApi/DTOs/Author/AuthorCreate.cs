@@ -7,7 +7,10 @@ namespace JokesApi.DTOs.Author
     {
         [JsonIgnore]
         public int Id { get; set; }
-        public string Name { get; set; } = null!;
+
+        [Required(AllowEmptyStrings = false)]
+        public string Name { get; set; } = default!;
+
         [JsonIgnore]
         public DateTime RegistrationDate { get; set; }
     }
